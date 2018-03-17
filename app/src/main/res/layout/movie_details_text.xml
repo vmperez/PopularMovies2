@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+        <!-- Original title label -->
+        <TextView
+            android:id="@+id/original_title_label"
+            style="@style/DetailLabel"
+            android:text="@string/original_title_label" />
+
+        <!-- Original title -->
+        <TextView
+            android:id="@+id/original_title"
+            style="@style/movie_info_details"
+            tools:text="The empire strikes back" />
+
+        <!-- Rating label -->
+        <TextView
+            android:id="@+id/rating_label"
+            style="@style/DetailLabel"
+            android:layout_marginTop="20dp"
+            android:text="@string/rating_label" />
+
+        <!-- Rating -->
+        <TextView
+            android:id="@+id/rating"
+            style="@style/movie_info_details"
+            tools:text="90%" />
+
+        <!-- Release date label -->
+        <TextView
+            android:id="@+id/release_date_label"
+            style="@style/DetailLabel"
+            android:layout_marginTop="20dp"
+            android:text="@string/release_date_label" />
+
+        <!-- Release date -->
+        <TextView
+            android:id="@+id/release_date"
+            style="@style/movie_info_details"
+            tools:text="1977" />
+
+        <!-- Synopsis label -->
+        <TextView
+            android:id="@+id/synopsis_label"
+            style="@style/DetailLabel"
+            android:layout_marginTop="20dp"
+            android:text="@string/synopsis_label" />
+
+        <!-- Synopsis -->
+        <TextView
+            android:id="@+id/synopsis"
+            style="@style/movie_info_details"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+
+    </LinearLayout>
+    </ScrollView>

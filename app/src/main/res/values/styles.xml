@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Used for settings preference theme -->
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
+
+    <!-- movie list activity action bar styles -->
+    <style name="ActionBar.Solid.PopMovies.NoTitle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="displayOptions">showTitle|showHome</item>
+    </style>
+
+    <style name="AppTheme.PopMovies" parent="@style/AppTheme">
+        <item name="actionBarStyle">@style/ActionBar.Solid.PopMovies.NoTitle</item>
+    </style>
+
+    <!-- Style used in the DetailActivity for the labels of the extra movie information -->
+    <style name="DetailLabel" parent="@style/TextAppearance.AppCompat.Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- Style used in the DetailActivity for the values of the extra movie information -->
+    <style name="movie_info_details" parent="@style/TextAppearance.AppCompat.Headline">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_icon">40dp</dimen>
+
+    <dimen name="list_item_padding_horizontal">36dp</dimen>
+    <dimen name="list_item_padding_vertical">2dp</dimen>
+</resources>
