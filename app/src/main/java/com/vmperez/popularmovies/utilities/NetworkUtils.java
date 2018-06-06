@@ -22,7 +22,7 @@ public final class NetworkUtils {
     private static final String MOVIEDB_SMALL_SIZE = "w92";
     private static final String MOVIEDB_POPULAR = "popular";
     private static final String MOVIEDB_TOP_RATED = "top_rated";
-    private static final String MOVIEDB_API_KEY = "?<YOU_API_KEY>";
+    private static final String MOVIEDB_API_KEY = "?api_key=<YOUR_API_KEY_HERE>";
 
 
     private static final String MOVIEDB_REQUEST_MOVIE_URL = MOVIE_API_BASE_URL;

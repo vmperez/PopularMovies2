@@ -35,6 +35,7 @@ public class MovieInfo implements Parcelable {
     private double voteAverage;
     private int voteCount;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    private int favorite = 0;
 
     public MovieInfo() {   }
 
@@ -58,6 +59,7 @@ public class MovieInfo implements Parcelable {
         video = in.readByte() != 0;
         voteAverage = in.readDouble();
         voteCount = in.readInt();
+        favorite = in.readInt();
     }
 
     public boolean isAdult() {
@@ -268,6 +270,10 @@ public class MovieInfo implements Parcelable {
         this.additionalProperties.put(name, value);
     }
 
+    public int getFavorite() { return favorite; }
+
+    public void setFavorite(int favorite) { this.favorite = favorite; }
+
     /**
      * GENRE INNER CLASS
      */
@@ -450,6 +456,7 @@ public class MovieInfo implements Parcelable {
         dest.writeByte((byte) (video ? 1 : 0));
         dest.writeDouble(voteAverage);
         dest.writeInt(voteCount);
+        dest.writeInt(favorite);
     }
 
     public static final Creator<MovieInfo> CREATOR = new Creator<MovieInfo>() {

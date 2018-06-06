@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!--The manifest entry for our MainActivity. Each Activity requires a manifest entry-->
+        <!-- Manifest entry for MainActivity. One entry per Activity required -->
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
 
-        <!--The manifest entry for our DetailActivity. Each Activity requires a manifest entry-->
+        <!-- Manifest entry for DetailActivity. One entry per Activity required -->
         <activity
             android:name=".DetailActivity"
             android:label="@string/title_activity_detail"
@@ -36,8 +36,14 @@
                 android:value=".MainActivity"/>
         </activity>
 
-        <!--The manifest entry for our SettingsActivity. Each Activity requires a manifest entry-->
+        <!-- Manifest entry for SettingsActivity. One entry per Activity required -->
         <activity android:name=".SettingsActivity"/>
+
+        <!-- Manifest entry for data provider -->
+        <provider
+            android:name=".data.MovieProvider"
+            android:authorities="@string/content_authority"
+            android:exported="false"/>
 
     </application>
 </manifest>
